@@ -5,8 +5,8 @@ const { OpenAIEmbeddings } = require("langchain/embeddings/openai");
 const { HNSWLib } = require("langchain/vectorstores/hnswlib");
 const { Document } = require("langchain/document");
 
-const docstorePath = path.join(__dirname, "qna/docstore.json");
-const vectorStorePath = "qna"; // Directory where vector storage is saved
+const docstorePath = path.join(__dirname, "qna/docstore.json"); // Correct path
+const vectorStorePath = path.join(__dirname, "qna"); // Ensure correct path
 
 require("dotenv").config();
 
