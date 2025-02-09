@@ -32,37 +32,31 @@ async function loadQnAData() {
 
 // Embed and store the QnA data
 async function embedAndStoreQnA() {
-    console.log("Loading QnA data...");
-    const qnaData = await loadQnAData();
+  console.log("Loading QnA data...");
+  const qnaData = await loadQnAData();
 
-    // Convert each QnA pair into a formatted text document
-    const docs = qnaData.map((item) => new Document({
-        pageContent: `Question: ${item.question}\n\nAnswer: ${item.answer}\n\nContext: ${item.context}\n\n`,
-        metadata: { id: item.id }
-    }));
+  const docs = qnaData.map((item, index) => new Document({
+      pageContent: `Question: ${item.question}\n\nAnswer: ${item.answer}\n\nContext: ${item.context}\n\n`,
+      metadata: { id: index } // Ensuring IDs are properly stored
+  }));
 
-    console.log("API Key:", process.env.OPENAI_API_KEY);
+  console.log("Generating embeddings...");
+  const embeddings = new OpenAIEmbeddings({ openAIApiKey: process.env.OPENAI_API_KEY });
+  const vectorStore = await HNSWLib.fromDocuments(docs, embeddings);
 
-    console.log("Generating embeddings...");
-    const embeddings = new OpenAIEmbeddings({
-      openAIApiKey: process.env.OPENAI_API_KEY
-    });
-  
-    const vectorStore = await HNSWLib.fromDocuments(docs, embeddings);
+  console.log("Saving vector store...");
+  await vectorStore.save(vectorStorePath);
 
-    console.log("Saving vector store...");
-    await vectorStore.save(vectorStorePath);
+  console.log("Saving docstore.json...");
+  const docstoreData = docs.map((doc, index) => [
+      index,
+      { pageContent: doc.pageContent, metadata: doc.metadata }
+  ]);
+  fs.writeFileSync(docstorePath, JSON.stringify(docstoreData, null, 2));
 
-    // Save docstore.json
-    console.log("Saving docstore.json...");
-    const docstoreData = docs.map((doc, index) => [
-        index,
-        { pageContent: doc.pageContent, metadata: doc.metadata }
-    ]);
-    fs.writeFileSync(docstorePath, JSON.stringify(docstoreData, null, 2));
-
-    console.log("QnA embeddings stored successfully!");
+  console.log("✅ QnA embeddings stored successfully!");
 }
+
 
 // Search the QnA data
 async function searchQnA(query) {
