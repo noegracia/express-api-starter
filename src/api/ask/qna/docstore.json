@@ -1,434 +1,338 @@
 [
-  [
-    0,
-    {
-      "pageContent": "Question: What is your name?\n\nAnswer: Noé\n\nContext: \n\n",
-      "metadata": {
-        "id": 0
-      }
+  {
+    "id": 0,
+    "pageContent": "Question: What is your name?\n\nAnswer: Noé\n\nContext: \n\n",
+    "metadata": {
+      "id": 0
     }
-  ],
-  [
-    1,
-    {
-      "pageContent": "Question: What is your full name?\n\nAnswer: Noé Gracia\n\nContext: \n\n",
-      "metadata": {
-        "id": 1
-      }
+  },
+  {
+    "id": 1,
+    "pageContent": "Question: What is your full name?\n\nAnswer: Noé Gracia\n\nContext: \n\n",
+    "metadata": {
+      "id": 1
     }
-  ],
-  [
-    2,
-    {
-      "pageContent": "Question: What is your last name?\n\nAnswer: Gracia\n\nContext: \n\n",
-      "metadata": {
-        "id": 2
-      }
+  },
+  {
+    "id": 2,
+    "pageContent": "Question: What is your last name?\n\nAnswer: Gracia\n\nContext: \n\n",
+    "metadata": {
+      "id": 2
     }
-  ],
-  [
-    3,
-    {
-      "pageContent": "Question: When were you born?\n\nAnswer: 22/05/2000\n\nContext: \n\n",
-      "metadata": {
-        "id": 3
-      }
+  },
+  {
+    "id": 3,
+    "pageContent": "Question: When were you born?\n\nAnswer: 22/05/2000\n\nContext: \n\n",
+    "metadata": {
+      "id": 3
     }
-  ],
-  [
-    4,
-    {
-      "pageContent": "Question: Where were you born?\n\nAnswer: Zaragoza\n\nContext: \n\n",
-      "metadata": {
-        "id": 4
-      }
+  },
+  {
+    "id": 4,
+    "pageContent": "Question: Where were you born?\n\nAnswer: Zaragoza\n\nContext: \n\n",
+    "metadata": {
+      "id": 4
     }
-  ],
-  [
-    5,
-    {
-      "pageContent": "Question: What is your nationality?\n\nAnswer: French and Spanish\n\nContext: \n\n",
-      "metadata": {
-        "id": 5
-      }
+  },
+  {
+    "id": 5,
+    "pageContent": "Question: What is your nationality?\n\nAnswer: French and Spanish\n\nContext: \n\n",
+    "metadata": {
+      "id": 5
     }
-  ],
-  [
-    6,
-    {
-      "pageContent": "Question: Where do you live?\n\nAnswer: France\n\nContext: \n\n",
-      "metadata": {
-        "id": 6
-      }
+  },
+  {
+    "id": 6,
+    "pageContent": "Question: Where do you live?\n\nAnswer: France\n\nContext: \n\n",
+    "metadata": {
+      "id": 6
     }
-  ],
-  [
-    7,
-    {
-      "pageContent": "Question: What is your professional title?\n\nAnswer: Data Scientist / Artificial Intelligence Engineer at Aqsone\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
-      "metadata": {
-        "id": 7
-      }
+  },
+  {
+    "id": 7,
+    "pageContent": "Question: What is your professional title?\n\nAnswer: Data Scientist / Artificial Intelligence Engineer at Aqsone\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
+    "metadata": {
+      "id": 7
     }
-  ],
-  [
-    8,
-    {
-      "pageContent": "Question: What is your career summary?\n\nAnswer: As a passionate AI Engineer with a Master’s degree in Artificial Intelligence, I am a hardworking and self-motivated individual with a strong desire to learn and grow. I have practical and theoretical knowledge in a broad range of AI and machine learning techniques and architectures. I am skilled in Python and core libraries used in statistics, data analysis, and AI. My experience includes neural network implementation, embedded programming, data analysis and processing, and AI software development. I am always looking for new challenges to develop my expertise and contribute to innovative AI solutions. I am currently seeking a role as a Machine Learning Engineer or AI Engineer where I can leverage my skills to build AI-driven systems.\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
-      "metadata": {
-        "id": 8
-      }
+  },
+  {
+    "id": 8,
+    "pageContent": "Question: What is your career summary?\n\nAnswer: As a passionate AI Engineer with a Master’s degree in Artificial Intelligence, I am a hardworking and self-motivated individual with a strong desire to learn and grow. I have practical and theoretical knowledge in a broad range of AI and machine learning techniques and architectures. I am skilled in Python and core libraries used in statistics, data analysis, and AI. My experience includes neural network implementation, embedded programming, data analysis and processing, and AI software development. I am always looking for new challenges to develop my expertise and contribute to innovative AI solutions. I am currently seeking a role as a Machine Learning Engineer or AI Engineer where I can leverage my skills to build AI-driven systems.\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
+    "metadata": {
+      "id": 8
     }
-  ],
-  [
-    9,
-    {
-      "pageContent": "Question: What certifications do you have?\n\nAnswer: AWS Machine Learning Speciality Certification (2024-2027), Hugging Face Deep Reinforcement Learning Certificate of Excellence (2024), More...\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
-      "metadata": {
-        "id": 9
-      }
+  },
+  {
+    "id": 9,
+    "pageContent": "Question: What certifications do you have?\n\nAnswer: AWS Machine Learning Speciality Certification (2024-2027), Hugging Face Deep Reinforcement Learning Certificate of Excellence (2024), More...\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
+    "metadata": {
+      "id": 9
     }
-  ],
-  [
-    10,
-    {
-      "pageContent": "Question: What are your soft skills?\n\nAnswer: Perseverance, Creativity, Self-motivation, Strong organizational skills, Autonomy, Fast learning, Problem-solving\n\nContext: \n\n",
-      "metadata": {
-        "id": 10
-      }
+  },
+  {
+    "id": 10,
+    "pageContent": "Question: What are your soft skills?\n\nAnswer: Perseverance, Creativity, Self-motivation, Strong organizational skills, Autonomy, Fast learning, Problem-solving\n\nContext: \n\n",
+    "metadata": {
+      "id": 10
     }
-  ],
-  [
-    11,
-    {
-      "pageContent": "Question: What languages do you speak?\n\nAnswer: French (Native/Bilingual), Spanish (Native/Bilingual), English (Full Professional Proficiency), German (Elementary)\n\nContext: \n\n",
-      "metadata": {
-        "id": 11
-      }
+  },
+  {
+    "id": 11,
+    "pageContent": "Question: What languages do you speak?\n\nAnswer: French (Native/Bilingual), Spanish (Native/Bilingual), English (Full Professional Proficiency), German (Elementary)\n\nContext: \n\n",
+    "metadata": {
+      "id": 11
     }
-  ],
-  [
-    12,
-    {
-      "pageContent": "Question: What are your interests?\n\nAnswer: Running, Dancing, Climbing, AI research, Robotics\n\nContext: \n\n",
-      "metadata": {
-        "id": 12
-      }
+  },
+  {
+    "id": 12,
+    "pageContent": "Question: What are your interests?\n\nAnswer: Running, Dancing, Climbing, AI research, Robotics\n\nContext: \n\n",
+    "metadata": {
+      "id": 12
     }
-  ],
-  [
-    13,
-    {
-      "pageContent": "Question: What is your education background 1?\n\nAnswer: Master of Technology (MTech) in Artificial Intelligence (2021-2023) - Université Paul Sabatier Toulouse III - Specialization: Intelligent interactive systems, robotics, image processing, computer vision, NLP.\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
-      "metadata": {
-        "id": 13
-      }
+  },
+  {
+    "id": 13,
+    "pageContent": "Question: What is your education background 1?\n\nAnswer: Master of Technology (MTech) in Artificial Intelligence (2021-2023) - Université Paul Sabatier Toulouse III - Specialization: Intelligent interactive systems, robotics, image processing, computer vision, NLP.\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
+    "metadata": {
+      "id": 13
     }
-  ],
-  [
-    14,
-    {
-      "pageContent": "Question: What is your education background 2?\n\nAnswer: Bachelor of Technology (BTech) in Computer Science (2018-2021) - Université Paul Sabatier Toulouse III - Final project: Visualization and automation tool for all university sensors and actuators.\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
-      "metadata": {
-        "id": 14
-      }
+  },
+  {
+    "id": 14,
+    "pageContent": "Question: What is your education background 2?\n\nAnswer: Bachelor of Technology (BTech) in Computer Science (2018-2021) - Université Paul Sabatier Toulouse III - Final project: Visualization and automation tool for all university sensors and actuators.\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
+    "metadata": {
+      "id": 14
     }
-  ],
-  [
-    15,
-    {
-      "pageContent": "Question: What is your education background 3?\n\nAnswer: Baccalauréat Scientifique (BAC S, 2018) - Lycée Français Molière de Saragosse - Specialization in Mathematics (High Honors).\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
-      "metadata": {
-        "id": 15
-      }
+  },
+  {
+    "id": 15,
+    "pageContent": "Question: What is your education background 3?\n\nAnswer: Baccalauréat Scientifique (BAC S, 2018) - Lycée Français Molière de Saragosse - Specialization in Mathematics (High Honors).\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
+    "metadata": {
+      "id": 15
     }
-  ],
-  [
-    16,
-    {
-      "pageContent": "Question: What are your skills?\n\nAnswer: Practical and theoretical knowledge in a broad range of AI and machine learning techniques and architecture. Expertise in Python and core libraries used in statistics, data analysis and AI (Pandas, Tensorflow, Pytorch, Sklearn, Scipy, SQL, Matplotlib, OpenCV). Experience in C, C++, embedded systems and embedded AI (TF Lite). Practical and theoretical knowledge in robotics, 3d perception, computer vision (ROS, PnL, YOLO). Skilled in Git and collaborative programming. (Git). Practical and theoretical knowledge in AWS machine learning services and data analysis to enhance cloud-based AI capabilities. (AWS Sagemaker, Glue, Lambda, EC2, Amazon S3). Familiar with a broad range of programming languages and technologies. (Docker, React, JS, Java, Home Assistant, MQTT)\n\nContext: noegracia.github.io/files/CV-NOEGRACIA-latex.pdf\\n\\n\n\n",
-      "metadata": {
-        "id": 16
-      }
+  },
+  {
+    "id": 16,
+    "pageContent": "Question: What are your skills?\n\nAnswer: Practical and theoretical knowledge in a broad range of AI and machine learning techniques and architecture. Expertise in Python and core libraries used in statistics, data analysis and AI (Pandas, Tensorflow, Pytorch, Sklearn, Scipy, SQL, Matplotlib, OpenCV). Experience in C, C++, embedded systems and embedded AI (TF Lite). Practical and theoretical knowledge in robotics, 3d perception, computer vision (ROS, PnL, YOLO). Skilled in Git and collaborative programming. (Git). Practical and theoretical knowledge in AWS machine learning services and data analysis to enhance cloud-based AI capabilities. (AWS Sagemaker, Glue, Lambda, EC2, Amazon S3). Familiar with a broad range of programming languages and technologies. (Docker, React, JS, Java, Home Assistant, MQTT)\n\nContext: noegracia.github.io/files/CV-NOEGRACIA-latex.pdf\\n\\n\n\n",
+    "metadata": {
+      "id": 16
     }
-  ],
-  [
-    17,
-    {
-      "pageContent": "Question: What are your technical skills 1?\n\nAnswer: Python: Expertise in Python and core AI/data libraries (Pandas, Tensorflow, Pytorch, Sklearn, Scipy, SQL, Matplotlib, OpenCV).\n\nContext: \n\n",
-      "metadata": {
-        "id": 17
-      }
+  },
+  {
+    "id": 17,
+    "pageContent": "Question: What are your technical skills 1?\n\nAnswer: Python: Expertise in Python and core AI/data libraries (Pandas, Tensorflow, Pytorch, Sklearn, Scipy, SQL, Matplotlib, OpenCV).\n\nContext: \n\n",
+    "metadata": {
+      "id": 17
     }
-  ],
-  [
-    18,
-    {
-      "pageContent": "Question: What are your technical skills 2?\n\nAnswer: C, C++: Experience in embedded systems and embedded AI (TF Lite, CMSIS).\n\nContext: \n\n",
-      "metadata": {
-        "id": 18
-      }
+  },
+  {
+    "id": 18,
+    "pageContent": "Question: What are your technical skills 2?\n\nAnswer: C, C++: Experience in embedded systems and embedded AI (TF Lite, CMSIS).\n\nContext: \n\n",
+    "metadata": {
+      "id": 18
     }
-  ],
-  [
-    19,
-    {
-      "pageContent": "Question: What are your technical skills 3?\n\nAnswer: Robotics, 3D Perception, and Computer Vision: Expertise in robotics, 3D perception, digital image processing, and AI applications (ROS, PnL, YOLO).\n\nContext: \n\n",
-      "metadata": {
-        "id": 19
-      }
+  },
+  {
+    "id": 19,
+    "pageContent": "Question: What are your technical skills 3?\n\nAnswer: Robotics, 3D Perception, and Computer Vision: Expertise in robotics, 3D perception, digital image processing, and AI applications (ROS, PnL, YOLO).\n\nContext: \n\n",
+    "metadata": {
+      "id": 19
     }
-  ],
-  [
-    20,
-    {
-      "pageContent": "Question: What are your technical skills 4?\n\nAnswer: Natural Language Processing (NLP): Experience in NLP techniques, chatbots, and Automatic Speech Recognition (nltk, spacy, BERT, RASA).\n\nContext: \n\n",
-      "metadata": {
-        "id": 20
-      }
+  },
+  {
+    "id": 20,
+    "pageContent": "Question: What are your technical skills 4?\n\nAnswer: Natural Language Processing (NLP): Experience in NLP techniques, chatbots, and Automatic Speech Recognition (nltk, spacy, BERT, RASA).\n\nContext: \n\n",
+    "metadata": {
+      "id": 20
     }
-  ],
-  [
-    21,
-    {
-      "pageContent": "Question: What are your technical skills 5?\n\nAnswer: Git & Collaborative Programming: Experience using GitHub, GitLab, Bitbucket.\n\nContext: \n\n",
-      "metadata": {
-        "id": 21
-      }
+  },
+  {
+    "id": 21,
+    "pageContent": "Question: What are your technical skills 5?\n\nAnswer: Git & Collaborative Programming: Experience using GitHub, GitLab, Bitbucket.\n\nContext: \n\n",
+    "metadata": {
+      "id": 21
     }
-  ],
-  [
-    22,
-    {
-      "pageContent": "Question: What are your technical skills 6?\n\nAnswer: Other Programming & Technologies: Familiarity with Docker, React, JavaScript, Java, Home Assistant, MQTT, Kubernetes.\n\nContext: \n\n",
-      "metadata": {
-        "id": 22
-      }
+  },
+  {
+    "id": 22,
+    "pageContent": "Question: What are your technical skills 6?\n\nAnswer: Other Programming & Technologies: Familiarity with Docker, React, JavaScript, Java, Home Assistant, MQTT, Kubernetes.\n\nContext: \n\n",
+    "metadata": {
+      "id": 22
     }
-  ],
-  [
-    23,
-    {
-      "pageContent": "Question: What is your work experience 1?\n\nAnswer: Data Scientist (Permanent) - Aqsone (June 2024 - Present) - Focus Areas: LLM-based chatbots, Retrieval-Augmented Generation (RAG), anomaly detection, AI pipeline creation - Responsibilities: Implementation of AI solutions and involvement in the entire AI development pipeline - Technologies Used: Python, LLM, RAG, AWS, Pandas, PySpark, SQL.\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
-      "metadata": {
-        "id": 23
-      }
+  },
+  {
+    "id": 23,
+    "pageContent": "Question: What is your work experience 1?\n\nAnswer: Data Scientist (Permanent) - Aqsone (June 2024 - Present) - Focus Areas: LLM-based chatbots, Retrieval-Augmented Generation (RAG), anomaly detection, AI pipeline creation - Responsibilities: Implementation of AI solutions and involvement in the entire AI development pipeline - Technologies Used: Python, LLM, RAG, AWS, Pandas, PySpark, SQL.\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
+    "metadata": {
+      "id": 23
     }
-  ],
-  [
-    24,
-    {
-      "pageContent": "Question: What is your work experience 2?\n\nAnswer: Artificial Intelligence Engineer (Intern & Trainee) - Groupe Zekat, FLY4U (May 2022 - Sept 2023) - Focus Areas: AI for embedded systems with IoT sensors - Projects: AI-driven inventory management for residual cable length prediction, Aircraft flight detection for automated radio frequency deactivation - Responsibilities: Built preprocessing tools for data structuring, synchronization, and resampling, Developed real-time time-series visualization and labeling tools, Designed AI models (CNN, RNN, NN, SVC) for pattern detection and anomaly detection, Embedded AI model implementation in C/C++ - Technologies Used: Python, Pandas, PySpark, Pytorch, Tensorflow, C, C++, Tensorflow Lite, Zephyr OS.\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
-      "metadata": {
-        "id": 24
-      }
+  },
+  {
+    "id": 24,
+    "pageContent": "Question: What is your work experience 2?\n\nAnswer: Artificial Intelligence Engineer (Intern & Trainee) - Groupe Zekat, FLY4U (May 2022 - Sept 2023) - Focus Areas: AI for embedded systems with IoT sensors - Projects: AI-driven inventory management for residual cable length prediction, Aircraft flight detection for automated radio frequency deactivation - Responsibilities: Built preprocessing tools for data structuring, synchronization, and resampling, Developed real-time time-series visualization and labeling tools, Designed AI models (CNN, RNN, NN, SVC) for pattern detection and anomaly detection, Embedded AI model implementation in C/C++ - Technologies Used: Python, Pandas, PySpark, Pytorch, Tensorflow, C, C++, Tensorflow Lite, Zephyr OS.\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
+    "metadata": {
+      "id": 24
     }
-  ],
-  [
-    25,
-    {
-      "pageContent": "Question: What is your work experience 3?\n\nAnswer: Web Application Developer (Intern) - Ecole Nationale Vétérinaire de Toulouse (Jan 2022 - Mar 2022) - Project: Developed 'Vita’nimal', a veterinary health monitoring tool - Responsibilities: Designed and developed the web app UI, Built backend algorithms for data processing and storage - Technologies Used: React, Django, JavaScript, IndexedDB, HTML, CSS, Python.\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
-      "metadata": {
-        "id": 25
-      }
+  },
+  {
+    "id": 25,
+    "pageContent": "Question: What is your work experience 3?\n\nAnswer: Web Application Developer (Intern) - Ecole Nationale Vétérinaire de Toulouse (Jan 2022 - Mar 2022) - Project: Developed 'Vita’nimal', a veterinary health monitoring tool - Responsibilities: Designed and developed the web app UI, Built backend algorithms for data processing and storage - Technologies Used: React, Django, JavaScript, IndexedDB, HTML, CSS, Python.\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
+    "metadata": {
+      "id": 25
     }
-  ],
-  [
-    26,
-    {
-      "pageContent": "Question: What is your work experience 4?\n\nAnswer: Software Developer (Intern) - IRIT (neOCampus) (Apr 2021 - May 2021) - Project: Developed a real-time visualization tool for university IoT sensor data - Responsibilities: Created algorithms for sensor/actuator detection via MQTT, Developed Home Assistant interface with real-time automation, Deployed the system via Docker on Raspberry Pi - Technologies Used: Python, AsyncIO, Docker, Grafana, MongoDB, MQTT.\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
-      "metadata": {
-        "id": 26
-      }
+  },
+  {
+    "id": 26,
+    "pageContent": "Question: What is your work experience 4?\n\nAnswer: Software Developer (Intern) - IRIT (neOCampus) (Apr 2021 - May 2021) - Project: Developed a real-time visualization tool for university IoT sensor data - Responsibilities: Created algorithms for sensor/actuator detection via MQTT, Developed Home Assistant interface with real-time automation, Deployed the system via Docker on Raspberry Pi - Technologies Used: Python, AsyncIO, Docker, Grafana, MongoDB, MQTT.\n\nContext: https://www.linkedin.com/in/noegracia/\n\n",
+    "metadata": {
+      "id": 26
     }
-  ],
-  [
-    27,
-    {
-      "pageContent": "Question: What is your personal project 1?\n\nAnswer: Conversational AI with RAG Architecture - Goal: Built an AI chatbot that enhances response quality through Retrieval-Augmented Generation (RAG) and a vector document database - Technologies Used: Python, LLM (TinyLlama, Zephyr, Phi-2, GPT-3.5), ElasticSearch, Langchain, Gradio, Streamlit, React - Demo: https://interview-now-ai.vercel.app/\n\nContext: https://github.com/noegracia/elastic-chat/\n\n",
-      "metadata": {
-        "id": 27
-      }
+  },
+  {
+    "id": 27,
+    "pageContent": "Question: What is your personal project 1?\n\nAnswer: Conversational AI with RAG Architecture - Goal: Built an AI chatbot that enhances response quality through Retrieval-Augmented Generation (RAG) and a vector document database - Technologies Used: Python, LLM (TinyLlama, Zephyr, Phi-2, GPT-3.5), ElasticSearch, Langchain, Gradio, Streamlit, React - Demo: https://interview-now-ai.vercel.app/\n\nContext: https://github.com/noegracia/elastic-chat/\n\n",
+    "metadata": {
+      "id": 27
     }
-  ],
-  [
-    28,
-    {
-      "pageContent": "Question: What are your industry experiences?\n\nAnswer: Data Science: Involvment in all the steps of pipeline creation. Logistics: AI anomaly detection, predictive analytics, Aeronautics: AI models for aircraft detection and sensor optimization, IoT (Internet of Things): AI-driven solutions for embedded systems and smart automation.\n\nContext: \n\n",
-      "metadata": {
-        "id": 28
-      }
+  },
+  {
+    "id": 28,
+    "pageContent": "Question: What are your industry experiences?\n\nAnswer: Data Science: Involvment in all the steps of pipeline creation. Logistics: AI anomaly detection, predictive analytics, Aeronautics: AI models for aircraft detection and sensor optimization, IoT (Internet of Things): AI-driven solutions for embedded systems and smart automation.\n\nContext: \n\n",
+    "metadata": {
+      "id": 28
     }
-  ],
-  [
-    29,
-    {
-      "pageContent": "Question: What is your availability?\n\nAnswer: Immediate availability (Visa may be required for non-Schengen areas).\n\nContext: \n\n",
-      "metadata": {
-        "id": 29
-      }
+  },
+  {
+    "id": 29,
+    "pageContent": "Question: What is your availability?\n\nAnswer: Immediate availability (Visa may be required for non-Schengen areas).\n\nContext: \n\n",
+    "metadata": {
+      "id": 29
     }
-  ],
-  [
-    30,
-    {
-      "pageContent": "Question: What is your daily routine?\n\nAnswer: Physical Activity: Cycling (~30 min/day), gym workouts (Push-Pull-Legs 2x/week), sports (Tennis, Volleyball, Dance) - Diet & Nutrition: Meal prepping with balanced macronutrients - Sleep: 7-8 hours per night, with a wind-down routine including reading - Current Book: 'The Final Empire' by Brandon Sanderson.\n\nContext: https://noegracia.github.io/posts/my-life/about-me/my-routine/\n\n",
-      "metadata": {
-        "id": 30
-      }
+  },
+  {
+    "id": 30,
+    "pageContent": "Question: What is your daily routine?\n\nAnswer: Physical Activity: Cycling (~30 min/day), gym workouts (Push-Pull-Legs 2x/week), sports (Tennis, Volleyball, Dance) - Diet & Nutrition: Meal prepping with balanced macronutrients - Sleep: 7-8 hours per night, with a wind-down routine including reading - Current Book: 'The Final Empire' by Brandon Sanderson.\n\nContext: https://noegracia.github.io/posts/my-life/about-me/my-routine/\n\n",
+    "metadata": {
+      "id": 30
     }
-  ],
-  [
-    31,
-    {
-      "pageContent": "Question: What is your computer setup?\n\nAnswer: PC Build: GeForce 3080, Intel i7-12700KF, 64GB RAM (3200MHz), 2TB SSD - Workstation: Dual-monitor setup optimized for AI workflows - Use Cases: Handling large datasets, training machine learning models, AI research.\n\nContext: https://noegracia.github.io/posts/my-life/about-me/my-setup/\n\n",
-      "metadata": {
-        "id": 31
-      }
+  },
+  {
+    "id": 31,
+    "pageContent": "Question: What is your computer setup?\n\nAnswer: PC Build: GeForce 3080, Intel i7-12700KF, 64GB RAM (3200MHz), 2TB SSD - Workstation: Dual-monitor setup optimized for AI workflows - Use Cases: Handling large datasets, training machine learning models, AI research.\n\nContext: https://noegracia.github.io/posts/my-life/about-me/my-setup/\n\n",
+    "metadata": {
+      "id": 31
     }
-  ],
-  [
-    32,
-    {
-      "pageContent": "Question: What is your portfolio?\n\nAnswer: https://noegracia.github.io/\n\nContext: \n\n",
-      "metadata": {
-        "id": 32
-      }
+  },
+  {
+    "id": 32,
+    "pageContent": "Question: What is your portfolio?\n\nAnswer: https://noegracia.github.io/\n\nContext: \n\n",
+    "metadata": {
+      "id": 32
     }
-  ],
-  [
-    33,
-    {
-      "pageContent": "Question: Where can I find your resume?\n\nAnswer: https://noegracia.github.io/files/CV-NOEGRACIA-latex.pdf\n\nContext: \n\n",
-      "metadata": {
-        "id": 33
-      }
+  },
+  {
+    "id": 33,
+    "pageContent": "Question: Where can I find your resume?\n\nAnswer: https://noegracia.github.io/files/CV-NOEGRACIA-latex.pdf\n\nContext: \n\n",
+    "metadata": {
+      "id": 33
     }
-  ],
-  [
-    34,
-    {
-      "pageContent": "Question: Where can I contact you?\n\nAnswer: noegraciagirona@gmail.com\n\nContext: \n\n",
-      "metadata": {
-        "id": 34
-      }
+  },
+  {
+    "id": 34,
+    "pageContent": "Question: Where can I contact you?\n\nAnswer: noegraciagirona@gmail.com\n\nContext: \n\n",
+    "metadata": {
+      "id": 34
     }
-  ],
-  [
-    35,
-    {
-      "pageContent": "Question: What is your LinkedIn profile?\n\nAnswer: https://www.linkedin.com/in/noegracia/\n\nContext: \n\n",
-      "metadata": {
-        "id": 35
-      }
+  },
+  {
+    "id": 35,
+    "pageContent": "Question: What is your LinkedIn profile?\n\nAnswer: https://www.linkedin.com/in/noegracia/\n\nContext: \n\n",
+    "metadata": {
+      "id": 35
     }
-  ],
-  [
-    36,
-    {
-      "pageContent": "Question: What is your personal project demo?\n\nAnswer: https://interview-now-ai.vercel.app/\n\nContext: \n\n",
-      "metadata": {
-        "id": 36
-      }
+  },
+  {
+    "id": 36,
+    "pageContent": "Question: What is your personal project demo?\n\nAnswer: https://interview-now-ai.vercel.app/\n\nContext: \n\n",
+    "metadata": {
+      "id": 36
     }
-  ],
-  [
-    37,
-    {
-      "pageContent": "Question: What is your personal chatbot project?\n\nAnswer: https://github.com/noegracia/elastic-chat\n\nContext: \n\n",
-      "metadata": {
-        "id": 37
-      }
+  },
+  {
+    "id": 37,
+    "pageContent": "Question: What is your personal chatbot project?\n\nAnswer: https://github.com/noegracia/elastic-chat\n\nContext: \n\n",
+    "metadata": {
+      "id": 37
     }
-  ],
-  [
-    38,
-    {
-      "pageContent": "Question: Why do you want to work in AI projects?\n\nAnswer: I am passionate about AI and love working with cutting-edge technology. I enjoy continuously learning, experimenting, and applying my knowledge to innovative projects that push technological boundaries.\n\nContext: \n\n",
-      "metadata": {
-        "id": 38
-      }
+  },
+  {
+    "id": 38,
+    "pageContent": "Question: Why do you want to work in AI projects?\n\nAnswer: I am passionate about AI and love working with cutting-edge technology. I enjoy continuously learning, experimenting, and applying my knowledge to innovative projects that push technological boundaries.\n\nContext: \n\n",
+    "metadata": {
+      "id": 38
     }
-  ],
-  [
-    39,
-    {
-      "pageContent": "Question: What kind of AI projects excite you the most?\n\nAnswer: Currently, I am highly interested in Computer Vision (CV) and Large Language Models (LLMs). However, I also have a strong background in Data Science and an increasing interest in Time Series Analysis and Market Prediction.\n\nContext: \n\n",
-      "metadata": {
-        "id": 39
-      }
+  },
+  {
+    "id": 39,
+    "pageContent": "Question: What kind of AI projects excite you the most?\n\nAnswer: Currently, I am highly interested in Computer Vision (CV) and Large Language Models (LLMs). However, I also have a strong background in Data Science and an increasing interest in Time Series Analysis and Market Prediction.\n\nContext: \n\n",
+    "metadata": {
+      "id": 39
     }
-  ],
-  [
-    40,
-    {
-      "pageContent": "Question: What is the most challenging AI project you have worked on, and how did you solve the challenge?\n\nAnswer: One of the most challenging projects I worked on involved implementing AI in an embedded system. To achieve this, I had to develop multiple supporting tools, including preprocessing pipelines, data labeling tools, and optimization frameworks. I also built an entire AI deployment pipeline to integrate and test the system in a microcontroller environment.\n\nContext: \n\n",
-      "metadata": {
-        "id": 40
-      }
+  },
+  {
+    "id": 40,
+    "pageContent": "Question: What is the most challenging AI project you have worked on, and how did you solve the challenge?\n\nAnswer: One of the most challenging projects I worked on involved implementing AI in an embedded system. To achieve this, I had to develop multiple supporting tools, including preprocessing pipelines, data labeling tools, and optimization frameworks. I also built an entire AI deployment pipeline to integrate and test the system in a microcontroller environment.\n\nContext: \n\n",
+    "metadata": {
+      "id": 40
     }
-  ],
-  [
-    41,
-    {
-      "pageContent": "Question: Can you explain a time when you improved an AI model's performance?\n\nAnswer: Rather than a single instance, I have extensive experience improving AI models by using techniques such as hyperparameter tuning, performance evaluation using advanced metrics, and systematic testing. I focus on optimizing models based on data characteristics, architecture selection, and real-world constraints.\n\nContext: \n\n",
-      "metadata": {
-        "id": 41
-      }
+  },
+  {
+    "id": 41,
+    "pageContent": "Question: Can you explain a time when you improved an AI model's performance?\n\nAnswer: Rather than a single instance, I have extensive experience improving AI models by using techniques such as hyperparameter tuning, performance evaluation using advanced metrics, and systematic testing. I focus on optimizing models based on data characteristics, architecture selection, and real-world constraints.\n\nContext: \n\n",
+    "metadata": {
+      "id": 41
     }
-  ],
-  [
-    42,
-    {
-      "pageContent": "Question: Which AI frameworks or libraries do you prefer, and why?\n\nAnswer: I primarily use Pandas, PyTorch, and Python, as they have been central to my work. However, I also have experience with TensorFlow, PySpark, and a diverse AI/ML stack. I appreciate PyTorch for its flexibility and TensorFlow for its scalability in production environments.\n\nContext: \n\n",
-      "metadata": {
-        "id": 42
-      }
+  },
+  {
+    "id": 42,
+    "pageContent": "Question: Which AI frameworks or libraries do you prefer, and why?\n\nAnswer: I primarily use Pandas, PyTorch, and Python, as they have been central to my work. However, I also have experience with TensorFlow, PySpark, and a diverse AI/ML stack. I appreciate PyTorch for its flexibility and TensorFlow for its scalability in production environments.\n\nContext: \n\n",
+    "metadata": {
+      "id": 42
     }
-  ],
-  [
-    43,
-    {
-      "pageContent": "Question: How do you approach data preprocessing for AI models?\n\nAnswer: My approach to data preprocessing depends on the project's objective and data structure. First, I analyze the data type, distribution, and goals. Then, I optimize the dataset by applying format adjustments, feature selection, and data cleaning (removing unnecessary or redundant information). If working with large-scale data, I also consider distributed processing for efficiency.\n\nContext: \n\n",
-      "metadata": {
-        "id": 43
-      }
+  },
+  {
+    "id": 43,
+    "pageContent": "Question: How do you approach data preprocessing for AI models?\n\nAnswer: My approach to data preprocessing depends on the project's objective and data structure. First, I analyze the data type, distribution, and goals. Then, I optimize the dataset by applying format adjustments, feature selection, and data cleaning (removing unnecessary or redundant information). If working with large-scale data, I also consider distributed processing for efficiency.\n\nContext: \n\n",
+    "metadata": {
+      "id": 43
     }
-  ],
-  [
-    44,
-    {
-      "pageContent": "Question: What is your experience with Large Language Models (LLMs)?\n\nAnswer: I have worked on several personal projects utilizing LLMs, and I have also been involved in LLM-based chatbot development at Aqsone. My main focus has been on advanced AI agents for legal classification and domain-specific NLP tasks.\n\nContext: \n\n",
-      "metadata": {
-        "id": 44
-      }
+  },
+  {
+    "id": 44,
+    "pageContent": "Question: What is your experience with Large Language Models (LLMs)?\n\nAnswer: I have worked on several personal projects utilizing LLMs, and I have also been involved in LLM-based chatbot development at Aqsone. My main focus has been on advanced AI agents for legal classification and domain-specific NLP tasks.\n\nContext: \n\n",
+    "metadata": {
+      "id": 44
     }
-  ],
-  [
-    45,
-    {
-      "pageContent": "Question: What is your favorite AI research topic, and why?\n\nAnswer: I am particularly passionate about Computer Vision (CV) and Large Language Models (LLMs). Both fields are rapidly evolving, offering endless possibilities for innovation across industries.\n\nContext: \n\n",
-      "metadata": {
-        "id": 45
-      }
+  },
+  {
+    "id": 45,
+    "pageContent": "Question: What is your favorite AI research topic, and why?\n\nAnswer: I am particularly passionate about Computer Vision (CV) and Large Language Models (LLMs). Both fields are rapidly evolving, offering endless possibilities for innovation across industries.\n\nContext: \n\n",
+    "metadata": {
+      "id": 45
     }
-  ],
-  [
-    46,
-    {
-      "pageContent": "Question: Do you prefer working on applied AI or AI research?\n\nAnswer: I prefer applied AI, as I enjoy developing solutions that have real-world impact. However, I also like to integrate some research components into my work, as I enjoy learning and staying updated with the latest advancements.\n\nContext: \n\n",
-      "metadata": {
-        "id": 46
-      }
+  },
+  {
+    "id": 46,
+    "pageContent": "Question: Do you prefer working on applied AI or AI research?\n\nAnswer: I prefer applied AI, as I enjoy developing solutions that have real-world impact. However, I also like to integrate some research components into my work, as I enjoy learning and staying updated with the latest advancements.\n\nContext: \n\n",
+    "metadata": {
+      "id": 46
     }
-  ],
-  [
-    47,
-    {
-      "pageContent": "Question: Have you contributed to any open-source AI projects?\n\nAnswer: Not officially, but I have worked on personal AI projects and collaborated with peers on various AI initiatives.\n\nContext: \n\n",
-      "metadata": {
-        "id": 47
-      }
+  },
+  {
+    "id": 47,
+    "pageContent": "Question: Have you contributed to any open-source AI projects?\n\nAnswer: Not officially, but I have worked on personal AI projects and collaborated with peers on various AI initiatives.\n\nContext: \n\n",
+    "metadata": {
+      "id": 47
     }
-  ]
+  }
 ]
