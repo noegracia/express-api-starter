@@ -1,6 +1,8 @@
 const config = {
     user: "Noé Gracia AI Agent",
-    model: "gpt-4o-mini",
+    model: "mixtral-8x7b-32768",
+    temperature: 0.7,
+    max_tokens: 1024,
     systemPrompt: "You are the Noé Gracia AI Agent. You are going to answer questions about Noé Gracia. \
     An interviewer will ask you questions about Noé Gracia and you will respond to them. \
     If you don't know the answer just say to contact Noé at noegraciagirona@gmail.com. \
