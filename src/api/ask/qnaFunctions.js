@@ -1,12 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 const csv = require("csv-parser");
-const { OpenAIEmbeddings } = require("langchain/embeddings/openai");
-const { HNSWLib } = require("langchain/vectorstores/hnswlib");
-const { Document } = require("langchain/document");
 
 const docstorePath = path.join(__dirname, "qna/docstore.json");
-const vectorStorePath = path.join(__dirname, "qna/vector_store"); // Ensure correct path
+const dataPath = path.join(__dirname, "data/qna.csv");
 
 require("dotenv").config();
 
@@ -16,14 +13,14 @@ require("dotenv").config();
 async function loadQnAData() {
     const qna = [];
     await new Promise((resolve, reject) => {
-        fs.createReadStream("./data/qna.csv")
+        fs.createReadStream(dataPath)
             .pipe(csv())
             .on("data", (row) => {
                 qna.push({ 
                     question: row.question.trim(), 
                     answer: row.answer.trim(), 
                     context: row.context ? row.context.trim() : "",
-                    id: qna.length // Assign an index-based ID
+                    id: qna.length
                 });
             })
             .on("end", resolve)
@@ -35,104 +32,137 @@ async function loadQnAData() {
 }
 
 /**
- * Embed and store the QnA data into the vector store
+ * Store the QnA data
  */
 async function embedAndStoreQnA() {
     console.log("📌 Loading QnA data...");
     const qnaData = await loadQnAData();
 
     // Convert QnA data into Documents
-    const docs = qnaData.map((item, index) => new Document({
+    const docs = qnaData.map((item, index) => ({
+        id: index,
         pageContent: `Question: ${item.question}\n\nAnswer: ${item.answer}\n\nContext: ${item.context}\n\n`,
-        metadata: { id: index } // Ensure IDs are properly stored
+        metadata: { id: index }
     }));
-
-    console.log("🔹 Generating embeddings...");
-    const embeddings = new OpenAIEmbeddings({ openAIApiKey: process.env.OPENAI_API_KEY });
-
-    const vectorStore = await HNSWLib.fromDocuments(docs, embeddings);
-
-    console.log("💾 Saving vector store...");
-    await vectorStore.save(vectorStorePath);
 
     console.log("💾 Saving docstore.json...");
-    const docstoreData = docs.map((doc, index) => ({
-        id: index,
-        pageContent: doc.pageContent,
-        metadata: doc.metadata
-    }));
-    fs.writeFileSync(docstorePath, JSON.stringify(docstoreData, null, 2));
+    fs.writeFileSync(docstorePath, JSON.stringify(docs, null, 2));
 
-    console.log("✅ QnA embeddings stored successfully!");
+    console.log("✅ QnA data stored successfully!");
 }
 
 /**
- * Perform intelligent similarity search with ranking and threshold filtering
+ * Extract relevant information from a document
  */
-async function searchQnA(query, topK = 10, scoreThreshold = 0.1) {
-  if (!query) {
-      throw new Error("❌ Missing query");
-  }
+function extractRelevantInfo(doc) {
+    // Parse the document content
+    const questionMatch = doc.pageContent.match(/Question: (.*?)(?:\n|$)/);
+    const answerMatch = doc.pageContent.match(/Answer: (.*?)(?:\n\n|$)/s);
+    const contextMatch = doc.pageContent.match(/Context: (.*?)(?:\n\n|$)/s);
+    
+    return {
+        question: questionMatch ? questionMatch[1].trim() : "",
+        answer: answerMatch ? answerMatch[1].trim() : "",
+        context: contextMatch ? contextMatch[1].trim() : "",
+        score: doc.score
+    };
+}
 
-  console.log("📌 Loading vector store...");
-  const vectorStore = await HNSWLib.load(vectorStorePath, new OpenAIEmbeddings());
+/**
+ * Format context for the LLM
+ */
+function formatContextForLLM(results) {
+    if (!results || results.length === 0) {
+        return "No relevant information found.";
+    }
+    
+    // Extract and format the information
+    const formattedResults = results.map(result => {
+        const info = extractRelevantInfo(result);
+        return `Question: ${info.question}\nAnswer: ${info.answer}${info.context ? `\nContext: ${info.context}` : ''}`;
+    });
+    
+    // Join with double newlines for better readability
+    return formattedResults.join("\n\n");
+}
 
-  // ✅ **Step 1: Convert Query to Embedding**
-  console.log("🔹 Generating query embedding...");
-  const embeddingModel = new OpenAIEmbeddings({ openAIApiKey: process.env.OPENAI_API_KEY });
-  const queryEmbedding = await embeddingModel.embedQuery(query); // Get 1536-dim vector
+/**
+ * Perform simple text-based search with improved relevance
+ */
+async function searchQnA(query, topK = 3) {
+    if (!query) {
+        throw new Error("❌ Missing query");
+    }
 
-  // ✅ **Step 2: Retrieve Top-K Similarity Results**
-  console.log("🔍 Retrieving top", topK, "results for query:", query);
-  const resultsWithScores = await vectorStore.similaritySearchVectorWithScore(queryEmbedding, topK); // Uses vector
+    // Load the docstore
+    let docstoreData = [];
+    if (fs.existsSync(docstorePath)) {
+        docstoreData = JSON.parse(fs.readFileSync(docstorePath, "utf-8"));
+    } else {
+        throw new Error("❌ Docstore not found. Run embedAndStoreQnA() first.");
+    }
 
-  console.log("🔹 Raw results with scores:", resultsWithScores);
+    // Normalize query
+    const normalizedQuery = query.toLowerCase().trim();
+    const queryWords = normalizedQuery.split(/\s+/);
+    
+    // Keywords that might indicate education-related queries
+    const educationKeywords = ['study', 'education', 'degree', 'university', 'college', 'school', 'graduate', 'major', 'field'];
+    const isEducationQuery = educationKeywords.some(keyword => normalizedQuery.includes(keyword));
 
-  // Ensure docstore.json exists
-  let docstoreData = [];
-  if (fs.existsSync(docstorePath)) {
-      docstoreData = JSON.parse(fs.readFileSync(docstorePath, "utf-8"));
-  } else {
-      throw new Error("❌ Docstore not found. Run embedAndStoreQnA() first.");
-  }
+    // Simple text-based search with improved scoring
+    const searchResults = docstoreData
+        .map(doc => {
+            const content = doc.pageContent.toLowerCase();
+            const question = content.match(/question: (.*?)(?:\n|$)/)?.[1] || '';
+            const answer = content.match(/answer: (.*?)(?:\n\n|$)/s)?.[1] || '';
+            
+            // Calculate base score from word matches
+            const wordMatches = queryWords.filter(word => 
+                content.includes(word) || 
+                question.includes(word) || 
+                answer.includes(word)
+            ).length;
+            
+            let score = wordMatches / queryWords.length;
+            
+            // Boost score for education-related content if query is about education
+            if (isEducationQuery) {
+                const educationContent = content.includes('education') || 
+                                      content.includes('study') || 
+                                      content.includes('degree') ||
+                                      content.includes('university');
+                if (educationContent) {
+                    score *= 1.5;
+                }
+            }
+            
+            // Boost score for exact phrase matches
+            if (content.includes(normalizedQuery)) {
+                score *= 1.3;
+            }
+            
+            // Boost score for question matches
+            if (question.includes(normalizedQuery)) {
+                score *= 1.2;
+            }
+            
+            return {
+                ...doc,
+                score
+            };
+        })
+        .filter(result => result.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, topK);
 
-  // ✅ **Step 3: Filter results by similarity score threshold**
-  const filteredResults = resultsWithScores
-      .filter(([_, score]) => score >= scoreThreshold) // Keep only relevant results
-      .map(([res, score]) => ({
-          id: res.metadata.id,
-          pageContent: res.pageContent,
-          score: score
-      }));
+    if (searchResults.length === 0) {
+        console.warn("⚠️ No results found. Returning generic response.");
+        return "No relevant information found. If it is something easy to answer do it as Noé would do it.";
+    }
 
-  console.log("✅ Filtered relevant results:", filteredResults.length);
-
-  if (filteredResults.length === 0) {
-      console.warn("⚠️ No results above the similarity threshold. Returning generic response.");
-      return ["No relevant information found. If it is something easy to answer do it as Noé would do it."];
-  }
-
-  // ✅ **Step 4: Group and Merge Answers for More Context**
-  let groupedAnswers = new Map();
-  
-  filteredResults.forEach((result) => {
-      const foundDoc = docstoreData.find(doc => doc.metadata.id === result.id);
-      if (foundDoc) {
-          const key = foundDoc.metadata.id;
-          if (!groupedAnswers.has(key)) {
-              groupedAnswers.set(key, foundDoc.pageContent);
-          }
-      }
-  });
-
-  // ✅ **Step 5: Sort by Relevance Score**
-  let finalAnswers = [...groupedAnswers.values()].sort((a, b) => {
-      return filteredResults.find(res => res.pageContent === b).score -
-             filteredResults.find(res => res.pageContent === a).score;
-  });
-
-  console.log("🎯 Returning top contextual responses...");
-  return finalAnswers.slice(0, topK); // Return **top 3** most relevant responses
+    console.log("🎯 Returning top contextual responses...");
+    return formatContextForLLM(searchResults);
 }
 
 // Export functions

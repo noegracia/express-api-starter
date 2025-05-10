@@ -1,5 +1,5 @@
 const express = require("express");
-const Groq = require("groq");
+const Groq = require("groq-sdk");
 const config = require("./config.js");
 const dotenv = require('dotenv');
 dotenv.config();
@@ -17,12 +17,11 @@ router.post("/", async (req, res) => {
     const chatMessages = req.body;
     
     // Search for the most similar QnA pair
-    const searchResult = await searchQnA(chatMessages[chatMessages.length - 1].message);
-    const contextPrompt = JSON.stringify(searchResult) + "\n\n";
-
+    const contextPrompt = await searchQnA(chatMessages[chatMessages.length - 1].message);
+    
     const systemMessage = {
       "role": "system",
-      "content": systemPrompt + `${contextPrompt}`
+      "content": systemPrompt + "\n\n" + contextPrompt
     }
 
     // Transform chat messages into Groq format
